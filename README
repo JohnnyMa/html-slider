@@ -1,6 +1,8 @@
 About this project:
 
 This is a tutorial of web-frontend develop.
-These sessions are in web style.
+These ppt are all in web style.
 
-It is based on deckjs.
+Include:
+1. deckjs    -- use deckjs(http://imakewebthings.com/deck.js/) as the base template.
+
