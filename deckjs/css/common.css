@@ -1,0 +1,33 @@
+html, body,
+div, address,
+form
+ {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+  height: 100%;
+}
+body > header {
+  width: 100%;
+  min-height: 32px;
+  background: #333;
+  overflow: hidden;
+}
+body > header > nav {
+margin: 0 auto;
+padding: 3px 0 0 0;
+width: 960px;
+text-align: center;
+}
+.deck-container {
+  width: auto;
+  margin: 16px auto 24px auto;
+  min-height: 560px;
+  font-size: 16px;
+}
+
+/**common****/
+.red {
+  color: red;
+}

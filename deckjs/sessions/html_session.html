@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>(X)HTML Session</title>
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="../core/deck.core.css">
+	<link rel="stylesheet" href="../extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="../extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="../extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="../extensions/status/deck.status.css">
+	<link rel="stylesheet" href="../extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="../extensions/scale/deck.scale.css">
+  <link rel="stylesheet" href="../css/common.css">
+	
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="../themes/style/web-2.0.css">
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="../themes/transition/horizontal-slide.css">
+	
+	<script src="../modernizr.custom.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <button id="toggle_menu">Show Menu</button>
+      <button id="toggle_goto">Toggle Goto</button>
+      <button id="first_page">First Page</button>
+      <button id="last_page">Last Page</button>
+    </nav>
+  </header>
+  
+  <article class="deck-container">
+    <!-- Begin slides -->
+    <section class="slide" id="title-slide">
+      <h1>HTML & XHTML</h1>
+    </section>
+
+    <section class="slide" id="html_agenda">
+      <h2>HTML Agenda</h2>
+      <ul>
+        <li>
+          <h3>Structure of Web Front End</h3>
+        </li>
+        <li>
+          <h3>What is HTML</h3>
+        </li>
+        <li>
+          <h3>First Page</h3>
+        </li>
+        <li>
+          <h3>HTML Tags</h3>
+        </li>
+        <li>
+          <h3>Basic Tags</h3>
+        </li>
+        <li>
+          <h3>HTML Components</h3>
+        </li>
+        <li>
+          <h3>Reference</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="html_structure">
+      <h2>Structure of Front End</h2>
+      <canvas id="structure_canvas" width="900" height="400">Your browser does not support the canvas element.</canvas>
+      <ul>
+        <li>
+          <h3>HTML focuses on how to describe and structure content</h3>
+        </li>
+        <li>
+          <h3>Javascript focuses on action and communication</h3>
+        </li>
+        <li>
+          <h3>CSS focuses on how to decorate the page</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="what_html">
+      <h2>What is HTML</h2>
+      <ul>
+        <li>
+          <h3>HTML stands for Hyper Text Markup Language</h3>
+        </li>
+        <li>
+          <h3>HTML is not a programming language, it is a markup language</h3>
+        </li>
+        <li>
+          <h3>A markup language is a set of markup tags</h3>
+        </li>
+        <li>
+          <h3>HTML uses markup tags to describe web pages</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="first_page">
+      <h2>First Page</h2>
+      <pre>
+        <code>
+          &lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+            &lt;head&gt;
+              &lt;title&gt;Title of page&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              This is my first homepage.
+              &lt;b&gt;Hello World&lt;/b&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+        </code>
+      </pre>
+    </section>
+
+    <section class="slide" id="basic_tag">
+      <h2>Basic Tags</h2>
+      <ul>
+        <li><strong>Headings</strong>: h1, h2, h3, h4, h5, h6</li>
+        <li><strong>Paragraphs</strong>: p</li>
+        <li><strong>Text Formatting</strong>: em, strong, sub, del, ins, small</li>
+        <li><strong>Lists</strong>: ul, li, ol, dl, dt, dd</li>
+        <li><strong>Tables</strong>: table, thead, tbody, tr, th, td</li>
+        <li><strong>Forms and Input</strong>: form, input, select, textarea</li>
+        <li><strong>Others</strong>: div, span, a, img, &lt;!----&gt;</li>
+        <li><strong>HTML5</strong>: header, footer, article, section</li>
+      </ul>
+    </section>
+
+    <section class="slide" id="components">
+      <h2>HTML Components</h2>
+      <ul>
+        <li>
+          <h3>Element(tag)</h3>
+        </li>
+        <li>
+          <h3>Attribute, such as class, id, title.</h3>
+        </li>
+        <li>
+          <h3>Text, &lt;h1&gt;Text in HTML&lt;/h1&gt;</h3>
+        </li>
+        <li>
+          <h3>Example: &lt;h1 id=”header” title=”hello”&gt;Text&lt;/h1&gt;</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="xhtml_page">
+      <h2>XHTML</h2>
+      <ul>
+        <li>
+          <h3>What is XHTML</h3>
+        </li>
+        <li>
+          <h3>Why XHTML</h3>
+        </li>
+        <li>
+          <h3>Differences Between XHTML And HTML</h3>
+        </li>
+        <li>
+          <h3>XHTML Syntax</h3>
+        </li>
+        <li>
+          <h3>XHTML DTD</h3>
+        </li>
+        <li>
+          <h3>Reference</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="what_xhtml">
+      <h2>What is XHTML</h2>
+      <ul>
+        <li>
+          <h3>XHTML stands for EXtensible HyperText Markup Language</h3>
+        </li>
+        <li>
+          <h3>XHTML is almost identical to HTML 4.01</h3>
+        </li>
+        <li>
+          <h3>XHTML is a stricter and cleaner version of HTML</h3>
+        </li>
+        <li>
+          <h3>XHTML is HTML defined as an XML application</h3>
+        </li>
+        <li>
+          <h3>XHTML is a W3C Recommendation</h3>
+        </li>
+      </ul>
+    </section>
+    
+    <section class="slide" id="why_xhtml">
+      <h2>Why XHTML</h2>
+      <ul>
+        <li>
+          <h3>Many pages on the internet contain "bad" HTML.</h3>
+        </li>
+        <li>
+          <h3>XML is a markup language where everything must be marked up correctly, which results in "well-formed" documents.</h3>
+        </li>
+        <li>
+          <h3>XML is designed to describe data, and HTML is designed to display data.</h3>
+        </li>
+        <li>
+          <h3>Different browsers on kinds of devices</h3>
+        </li>
+      </ul>
+      <p>Conclusion: Combining the strengths of HTML and XML, see <a href="http://cafe.elharo.com/web/refactoring-html/why-xhtml/">more</a></p>
+    </section>
+    
+    <section class="slide" id="difference">
+      <h2>Differences Between XHTML And HTML</h2>
+      <ul>
+        <li>
+          <p>XHTML elements must always be closed<br />
+               &lt;p&gt;This is a paragraph</p>
+        </li>
+        <li>
+          <p>XHTML elements must be properly nested<br />
+               &lt;b&gt;&lt;i&gt;This text is bold and italic&lt;/b&gt;&lt;/i&gt;</p>
+        </li>
+        <li>
+          <p>XHTML elements must be in lowercase<br />
+               A break: &lt;br /&gt;</p>
+        </li>
+        <li>
+          <p>XHTML documents must have one root element</p>
+        </li>
+      </ul>
+    </section>
+    
+    <section class="slide" id="xhtml_syntax">
+      <h2>XHTML Syntax</h2>
+      <ul>
+        <li>
+          <h3>Attribute names must be in lower case</h3>
+        </li>
+        <li>
+          <h3>Attribute values must be quoted</h3>
+        </li>
+        <li>
+          <h3>Attribute minimization is forbidden</h3>
+        </li>
+        <li>
+          <h3>Attribute minimization is forbidden</h3>
+        </li>
+      </ul>
+    </section>
+    
+    <section class="slide" id="xhtml_dtd">
+      <h2>The &lt;!DOCTYPE&gt; Declaration</h2>
+      <p>There are also many different versions of HTML, and a browser can only display an HTML page 100% correctly if it knows the exact HTML version used in the page. This is what &lt;!DOCTYPE&gt; is used for.</p>
+      <p>&lt;!DOCTYPE&gt; is not an HTML tag. It is an information (a declaration) to the browser about what version the HTML is written in. </p>
+      <ul>
+        <li>
+          <h3>HTML5</h3>
+          <pre><code>&lt!DOCTYPE html&gt;
+          </code></pre>
+        </li>
+        <li>
+          <h3>TRANSITHTML 4.01</h3>
+          <pre><code>&lt!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd"&gt;
+          </code></pre>
+        </li>
+        <li>
+          <h3>XHTML 1.0 Transitional</h3>
+          <pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+          </code></pre>
+        </li>
+      </ul>
+    </section>
+    
+    <section class="slide" id="intesting_questions">
+      <h2>Interesting Questions</h2>
+      <ul>
+        <li>
+          <h3>&lt;strong&gt; vs &lt;b&gt;</h3>
+        </li>
+        <li>
+          <h3>&lt;em&gt; vs &lt;i&gt;</h3>
+        </li>
+      </ul>
+    </section>
+    
+    <section class="slide" id="reference">
+      <h2>Reference</h2>
+      <ul>
+        <li>
+          <strong>HTML 4.01 Specification</strong>: <a href="http://www.w3.org/TR/html4/">http://www.w3.org/TR/html4/</a>
+        </li>
+        <li>
+          <strong>XHTML Tutorail</strong>: <a href="http://www.w3schools.com/xhtml/default.asp">http://www.w3schools.com/xhtml/default.asp</a>
+        </li>
+        <li>
+          <strong>XHTML1 W3C</strong>: <a href="http://www.w3.org/TR/xhtml1/">http://www.w3.org/TR/xhtml1/</a>
+        </li>
+      </ul>
+    </section>
+    
+    <section class="slide" id="tag_type">
+      <h2>Replaced Elements & Non-Replaced Elements</h2>
+      <p>A <strong>replaced element</strong> is any element whose appearance and dimensions are defined by an external resource. Examples include images (&lt;img&gt; tags), plugins (&lt;object&gt; tags), and form elements (&lt;button&gt;, &lt;textarea&gt;, &lt;input&gt;, and &lt;select&gt; tags). All other elements types can be referred to as <strong>non-replaced elements.</strong></p>
+      <p>Replaced elements can have intrinsic dimensions—width and height values that are defined by the element itself, rather than by its surroundings in the document. For example, if an image element has a width set to auto, the width of the linked image file will be used. Intrinsic dimensions also define an intrinsic ratio that’s used to determine the computed dimensions of the element should only one dimension be specified. For example, if only the width is specified for an image element—at, say, 100px—and the actual image is 200 pixels wide and 100 pixels high, the height of the element will be scaled by the same amount, to 50px.</p>
+    </section>
+    
+    <section class="slide" id="q_a">
+      <h1>Q & A</h1>
+      
+    </section>
+
+    <!-- deck.navigation snippet -->
+    <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+    <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- deck.hash snippet -->
+    <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+  </article>
+
+
+<!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script>window.jQuery || document.write('<script src="../jquery-1.7.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="../core/deck.core.js"></script>
+<script src="../extensions/hash/deck.hash.js"></script>
+<script src="../extensions/menu/deck.menu.js"></script>
+<script src="../extensions/goto/deck.goto.js"></script>
+<script src="../extensions/status/deck.status.js"></script>
+<script src="../extensions/navigation/deck.navigation.js"></script>
+<script src="../extensions/scale/deck.scale.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/html.js"></script>
+<!-- Initialize the deck -->
+<script>
+$(function() {
+	$.deck('.slide');
+});
+</script>
+
+</body>
+</html>
