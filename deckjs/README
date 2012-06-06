@@ -1,0 +1,11 @@
+About this folder:
+
+sessions  --  include the content of our session.
+               Add more html file into this folder when new session comes.
+
+css  --  include css files which would be used in our sessions.
+         Tip: we could add new single file when add new css code.
+
+js  --  interaction code for slide.
+         
+
