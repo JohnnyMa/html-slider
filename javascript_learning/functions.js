@@ -200,3 +200,84 @@ console.log(t);
 
 
 
+
+
+/*====================================================*/
+//more sample
+//sample 1
+var add_the_handlers = function (nodes) {
+	var i;
+	for (i = 0; i < nodes.length; i += 1) {
+		nodes[i].onclick = function (e) {
+			alert(i);
+		}
+	}
+};
+/*-------------------------------------------------*/
+//sample 2
+var add_the_handlers = function (nodes) {
+	var i;
+	for (i = 0; i < nodes.length; i++) {
+		nodes[i].onclick = function (i) {
+			return function (e) {
+				alert(e);
+			}(i);//important
+		}
+	}
+};
+/*====================================================*/
+/**
+ * 模块
+ * 一般形式：
+ * 一个定义了私有变量和函数的函数；
+ * 利用闭包创建可访问私有变量和函数的特权很熟；
+ * 最后，返回这个特权函数，或者把它们保存到一个可以访问到的地方。
+ * 
+ * 好处：可以摈弃全局变量的滥用。更好地实现封装.
+ * 模块通常结合单例一起使用
+ */
+String.method('deentityify', function() {
+	var entity = {
+		quot: '"',
+		lt: '<',
+		gt: '>'
+	};
+	
+	return function() {
+		return this.replace(/&([^&;]+);/g, function(a, b) {
+			var r = entity[b];
+			return typrof r === 'string' ? r : a;
+		});
+	};
+}());
+
+
+//module sample 2
+var serial_maker = function () {
+	var prefix = '';
+	var seq = 0;
+	
+	return {
+		set_prefix: function(p) {
+			prefix = p;
+		},
+		set_seq: function(s) {
+			seq = s;
+		},
+		gensym: function () {
+			var result = prefix + seq;
+			seq += 1;
+			
+			return result;
+		}
+	};
+};
+
+var seqer = serial_maker();
+seqer.set_prefix('Q');
+seqer.set_seq(1000);
+var unique = seqer.gensym();
+//【个人观点】其实模块就是返回一个对象，只有该对象才能访问自己的属性和方法。
+
+
+
