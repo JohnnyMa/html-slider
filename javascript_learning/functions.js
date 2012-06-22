@@ -166,3 +166,37 @@ function test(){
 test();
 
 
+/**
+ * ±Õ°ü
+ */
+var myObject = function() {
+	var value = 0;
+	
+	return {
+		increment: function (inc) {
+			value += typeof inc === "number" ? inc : 1;
+		},
+		getValue: function () {
+			return value;
+		}
+	}
+}();//important
+
+
+
+var quo = function (status) {
+	return {
+		get_status: function () {
+			return status;
+	}
+	};
+}
+
+var myQuo = quo("amazed");
+var t = myQuo.get_status();
+console.log(t);
+
+
+
+
+
