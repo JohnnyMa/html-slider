@@ -7,7 +7,7 @@ var myObject = {
 	}
 };
 
-//方法调用模式
+//锟斤拷锟斤拷锟斤拷锟斤拷模式
 myObject.increment('a');
 console.log(myObject.value);
 
@@ -20,7 +20,7 @@ var add = function (a, b) {
 	console.log(this);//DOMWindow
 	return a + b;
 }
-//函数调用
+//锟斤拷锟斤拷锟斤拷锟斤拷
 var sum = add(3, 4);
 
 
@@ -29,14 +29,14 @@ myObject.double = function () {
 	console.log(that);//myObject
 	
 	var helper = function () {
-		console.log(this);//DOMWindow 在这里this的指向改变了
+		console.log(this);//DOMWindow 锟斤拷锟斤拷锟斤拷this锟斤拷指锟斤拷锟侥憋拷锟斤拷
 		that.value = add(that.value, that.value);
 	};
 	
 	helper();
 };
 
-//方法调用
+//锟斤拷锟斤拷锟斤拷锟斤拷
 myObject.double();
 console.log(myObject.value);
 
@@ -50,7 +50,7 @@ Quo.prototype.get_status = function () {
 	console.log(this);//Quo
 	return this.status;
 }
-//构造器调用
+//锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
 var myQuo = new Quo("confused");
 var t = myQuo.get_status();
 console.log(t);
@@ -66,11 +66,11 @@ var add = function (a, b) {
 	return a + b;
 }
 var array = [3, 4];
-//apply调用
+//apply锟斤拷锟斤拷
 var sum = add.apply(null, array);
 /**
- * apply 的第一个参数：将要被绑定给this的值
- * 第二个参数： 一个参数数组
+ * apply 锟侥碉拷一锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷要锟斤拷锟襟定革拷this锟斤拷值
+ * 锟节讹拷锟斤拷锟斤拷锟斤拷锟斤拷 一锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
  */
 
 
@@ -98,40 +98,40 @@ console.log(status);//A-OK
 
 /**
  * 
- * javascript 的四种调用模式： 
- * 【方法调用模式】 当函数被保存为一个对象的属性时，我们称之为 方法。 这种模式下：this被绑定到该对象。
+ * javascript 锟斤拷锟斤拷锟街碉拷锟斤拷模式锟斤拷 
+ * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷模式锟斤拷 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷为一锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷时锟斤拷锟斤拷锟角筹拷之为 锟斤拷锟斤拷锟斤拷 锟斤拷锟斤拷模式锟铰ｏ拷this锟斤拷锟襟定碉拷锟矫讹拷锟斤拷锟斤拷
  * 
  * 
- * 【函数调用模式】 当函数并不是一个对象的属性时，它被作为一个函数来调用。 这时，this 被绑定到全局对象。
+ * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷模式锟斤拷 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷时锟斤拷锟斤拷锟斤拷锟斤拷为一锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟矫★拷 锟斤拷时锟斤拷this 锟斤拷锟襟定碉拷全锟街讹拷锟斤拷锟斤拷
  * 
  * 
- * 【构造器调用模式】  【apply调用模式】
+ * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷模式锟斤拷  锟斤拷apply锟斤拷锟斤拷模式锟斤拷
  * 
  * 
  * 
- * 函数被调用的时候都会有一个arguments的“数组”
- * arguments 是一个array-like的对象，readonly
+ * 锟斤拷锟斤拷锟斤拷锟斤拷锟矫碉拷时锟津都伙拷锟斤拷一锟斤拷arguments锟侥★拷锟斤拷锟介”
+ * arguments 锟斤拷一锟斤拷array-like锟侥讹拷锟斤拷锟斤拷readonly
  * 
  * 
- * 【tip】
- * 一个函数总是会返回一个值。
- * 如果没有指定值，则返回一个 undefined
+ * 锟斤拷tip锟斤拷
+ * 一锟斤拷锟斤拷锟斤拷锟斤拷锟角会返锟斤拷一锟斤拷值锟斤拷
+ * 锟斤拷锟斤拷没锟斤拷指锟斤拷值锟斤拷锟津返伙拷一锟斤拷 undefined
  * 
- * 如果函数以new的方式被调用，并且返回值不是一个对象的时候， 则返回this（该新对象）。
+ * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷new锟侥凤拷式锟斤拷锟斤拷锟矫ｏ拷锟斤拷锟揭凤拷锟斤拷值锟斤拷锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷时锟斤拷锟斤拷 锟津返伙拷this锟斤拷锟斤拷锟铰讹拷锟襟）★拷
  * 
  * 
  * 
  * 
  * try catch
  * 
- * exception 对象原生拥有name, message 属性。当然，也可以自己添加其他属性。
+ * exception 锟斤拷锟斤拷原锟斤拷拥锟斤拷name, message 锟斤拷锟皆★拷锟斤拷然锟斤拷也锟斤拷锟斤拷锟皆硷拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟皆★拷
  * 
  * 
  * 
- * javascript中，
- * 我们可以通过给Object.prototype添加方法来使得该方法对【所有对象】可用。
+ * javascript锟叫ｏ拷
+ * 锟斤拷锟角匡拷锟斤拷通锟斤拷锟斤拷Object.prototype锟斤拷锟接凤拷锟斤拷锟斤拷使锟矫该凤拷锟斤拷锟皆★拷锟斤拷锟叫讹拷锟襟】匡拷锟矫★拷
  * 
- * 可以通过给Function.prototype增加方法来使得该方法对【所有函数】可用。例子如下
+ * 锟斤拷锟斤拷通锟斤拷锟斤拷Function.prototype锟斤拷锟接凤拷锟斤拷锟斤拷使锟矫该凤拷锟斤拷锟皆★拷锟斤拷锟叫猴拷锟斤拷锟斤拷锟斤拷锟矫★拷锟斤拷锟斤拷锟斤拷锟斤拷
  * 
  */
 
@@ -147,8 +147,8 @@ console.log((-10/3).integer());
 
 /**
  * 
- * 有条件地增加一个方法
- * 这种做法比较保险，避免了不必要的冲突。
+ * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷一锟斤拷锟斤拷锟斤拷
+ * 锟斤拷锟斤拷锟斤拷锟斤拷锟饺较憋拷锟秸ｏ拷锟斤拷锟斤拷锟剿诧拷锟斤拷要锟侥筹拷突锟斤拷
  */
 Function.prototype.method = function (name, func) {
 	if (!this.prototype[name]) {
@@ -167,7 +167,7 @@ test();
 
 
 /**
- * 闭包
+ * 锟秸帮拷
  */
 var myObject = function() {
 	var value = 0;
@@ -227,14 +227,14 @@ var add_the_handlers = function (nodes) {
 };
 /*====================================================*/
 /**
- * 模块
- * 一般形式：
- * 一个定义了私有变量和函数的函数；
- * 利用闭包创建可访问私有变量和函数的特权很熟；
- * 最后，返回这个特权函数，或者把它们保存到一个可以访问到的地方。
+ * 模锟斤拷
+ * 一锟斤拷锟斤拷式锟斤拷
+ * 一锟斤拷锟斤拷锟斤拷锟斤拷私锟叫憋拷锟斤拷锟酵猴拷锟斤拷锟侥猴拷锟斤拷锟斤拷
+ * 锟斤拷锟矫闭帮拷锟斤拷锟斤拷锟缴凤拷锟斤拷私锟叫憋拷锟斤拷锟酵猴拷锟斤拷锟斤拷锟斤拷权锟斤拷锟届；
+ * 锟斤拷锟襟，凤拷锟斤拷锟斤拷锟斤拷锟斤拷权锟斤拷锟斤拷锟斤拷锟斤拷锟竭帮拷锟斤拷锟角憋拷锟芥到一锟斤拷锟斤拷锟皆凤拷锟绞碉拷锟侥地凤拷锟斤拷
  * 
- * 好处：可以摈弃全局变量的滥用。更好地实现封装.
- * 模块通常结合单例一起使用
+ * 锟矫达拷锟斤拷锟斤拷锟皆憋拷锟斤拷全锟街憋拷锟斤拷锟斤拷锟斤拷锟矫★拷锟斤拷锟矫碉拷实锟街凤拷装.
+ * 模锟斤拷通锟斤拷锟斤拷锟较碉拷锟斤拷一锟斤拷使锟斤拷
  */
 String.method('deentityify', function() {
 	var entity = {
@@ -277,20 +277,38 @@ var seqer = serial_maker();
 seqer.set_prefix('Q');
 seqer.set_seq(1000);
 var unique = seqer.gensym();
-//【个人观点】其实模块就是返回一个对象，只有该对象才能访问自己的属性和方法。
+//锟斤拷锟斤拷锟剿观点】锟斤拷实模锟斤拷锟斤拷锟角凤拷锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷只锟叫该讹拷锟斤拷锟斤拷锟杰凤拷锟斤拷锟皆硷拷锟斤拷锟斤拷锟皆和凤拷锟斤拷锟斤拷
 
 
 
 /**
- * 级联 cascade
+ * 锟斤拷锟斤拷 cascade
  * 
- * 一些方法没有返回值，例如一些这是修改对象的某个状态的方法。
- * 如果，我们让这些方法返回this，而不是undefined（无返回值的方法会自己返回一个undefined）的话，
- * 那么这样就启动了级联。
+ * 一些锟斤拷锟斤拷没锟叫凤拷锟斤拷值锟斤拷锟斤拷锟斤拷一些锟斤拷锟斤拷锟睫改讹拷锟斤拷锟斤拷某锟斤拷状态锟侥凤拷锟斤拷锟斤拷
+ * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷些锟斤拷锟斤拷锟斤拷锟斤拷this锟斤拷锟斤拷锟斤拷锟斤拷undefined锟斤拷锟睫凤拷锟斤拷值锟侥凤拷锟斤拷锟斤拷锟皆硷拷锟斤拷锟斤拷一锟斤拷undefined锟斤拷锟侥伙拷锟斤拷
+ * 锟斤拷么锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟剿硷拷锟斤拷锟斤拷
  * 
- * 级联可以让我们在书写javascript的时候，采用链式写法 jquery就采用了这种方式。
+ * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷写javascript锟斤拷时锟津，诧拷锟斤拷锟斤拷式写锟斤拷 jquery锟酵诧拷锟斤拷锟斤拷锟斤拷锟街凤拷式锟斤拷
  * 
  * 
  */
+ 
+ 
+ 
+ 
+ //use memoization to keep data to imporve performance
+function memfactorial(n) {
+  if (!memfactorial.cache) {
+    memfactorial.cache = {
+      "0": 1,
+      "1": 1
+    };
+  }
+  if (!memfactorial.cache.hasOwnProperty(n)) {
+    memfactorial.cache[n] = n * memfactorial(n - 1);
+  }
+
+  return memfactorial.cache[n];
+}
 
 
